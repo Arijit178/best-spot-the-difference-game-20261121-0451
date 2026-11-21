@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #141021; color: #f5ead6; font-family: Georgia, "Times New Roman", serif; }
+#app { max-width: 1180px; margin: 0 auto; padding: 12px 16px 28px; }
+header h1 { margin: 4px 0 0; font-size: 34px; letter-spacing: 1px; color: #ffd98a; }
+.tag { margin: 2px 0 10px; color: #c9b8a3; font-style: italic; }
+#hud { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; background: #241a38; border: 1px solid #4a3670; border-radius: 10px; padding: 8px 12px; font-size: 17px; }
+#hud span { margin-right: 6px; }
+#counter { font-weight: bold; color: #ffd98a; }
+#timer { font-weight: bold; }
+#timer.low { color: #ff7a6b; }
+button { background: #ffd98a; color: #241a38; border: none; border-radius: 8px; padding: 7px 12px; font: bold 15px Georgia, serif; cursor: pointer; }
+button:hover { background: #ffe6ae; }
+#panels { display: flex; gap: 14px; margin-top: 12px; }
+figure { margin: 0; flex: 1; }
+figcaption { margin-bottom: 6px; color: #c9b8a3; font-style: italic; }
+canvas { width: 100%; height: auto; display: block; border: 3px solid #4a3670; border-radius: 10px; background: #0e2a3f; cursor: crosshair; }
+#message { min-height: 24px; font-size: 17px; color: #e8dcc8; }
+#overlay { position: fixed; inset: 0; background: rgba(10, 6, 20, 0.82); display: flex; align-items: center; justify-content: center; }
+#overlay.hidden { display: none; }
+#overlayCard { background: #241a38; border: 2px solid #ffd98a; border-radius: 14px; padding: 28px 34px; max-width: 520px; text-align: center; }
+#overlayCard h2 { margin: 0 0 10px; color: #ffd98a; font-size: 30px; }
+#overlayCard p { font-size: 18px; line-height: 1.5; }
+#overlayBtn { font-size: 18px; padding: 10px 22px; }
+@media (max-width: 760px) { #panels { flex-direction: column; } }

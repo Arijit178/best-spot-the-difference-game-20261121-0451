@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Lane — Spot the Difference</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Lantern Lane</h1>
+    <p class="tag">Spot the Difference &middot; two pictures, one quiet street</p>
+  </header>
+  <div id="hud">
+    <span id="levelLabel">Level 1 &middot; Harbour Dusk</span>
+    <span id="counter">Found 0 / 6 &middot; 6 remain</span>
+    <span id="timer">2:00</span>
+    <span id="score">Score 0</span>
+    <button id="hintBtn" type="button">Hint (H)</button>
+    <button id="soundBtn" type="button">Sound: on</button>
+    <button id="pauseBtn" type="button">Pause</button>
+  </div>
+  <div id="panels">
+    <figure>
+      <figcaption>Left picture</figcaption>
+      <canvas id="leftCanvas" width="560" height="420"></canvas>
+    </figure>
+    <figure>
+      <figcaption>Right picture &mdash; spot what changed</figcaption>
+      <canvas id="rightCanvas" width="560" height="420"></canvas>
+    </figure>
+  </div>
+  <p id="message">Click a difference on either picture. Keyboard: H hint, P pause, R restart level.</p>
+  <div id="overlay" class="hidden">
+    <div id="overlayCard">
+      <h2 id="overlayTitle">Lantern Lane</h2>
+      <p id="overlayText"></p>
+      <button id="overlayBtn" type="button">Start playing</button>
+    </div>
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
