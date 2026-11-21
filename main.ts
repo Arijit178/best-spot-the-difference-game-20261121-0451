@@ -26,6 +26,8 @@ if (existsSync(join(here, "screenshots"))) {
 // shapes the dossier's bytes; the other caps refuse an entry the scorer
 // would refuse — more than 4 screenshots or one over 256 KiB, more than
 // 993 files in game/ or 48 MiB of game files, or a game/ path over 1000 bytes.
+// Lantern Lane ships 4 screenshots, all under 256 KiB, and 9 game files,
+// well inside every cap, so the dossier build cannot trip one.
 writeFileSync(
   join(out, "dossier.json"),
   buildDossier(out, {
